@@ -7,12 +7,10 @@
 <body>
 <script src="https://content.jwplatform.com/libraries/RhV9wGlo.js"></script>
 <div class="container" id="container"></div>
-<div id="container">&nbsp;</div>
+<div class="picasa" id="picasa"></div>
 <script style="border: outset 3px grey; box-shadow: 0px 0px 25px black;" type="text/javascript">
-var playerInstance = jwplayer("container");
-  playerInstance.setup
-({
-  id:'container',
+  var playerInstance = jwplayer("picasa");
+  playerInstance.setup({
   controls: true,
   displaytitle: true,
   width: "100%",
@@ -22,7 +20,7 @@ var playerInstance = jwplayer("container");
   primary: 'html5',
   provider: 'http',
   autostart: false,
-  image:"/jwplayer/thumb.jpg",
+
 playlist:[{sources: 
                   [{file: 'https://lh3.googleusercontent.com/fi6I9ZCDxNTxjO3MQlcnv_bbz9Wg4iF_B30Ehbn8pvjwXk3x0YM4hwDJ5RBa7Jq5xtfd2oil6DAh=m22',
                     label:"720p",
@@ -35,6 +33,8 @@ playlist:[{sources:
            image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
            title: 'VIDEO LINK 1',
          },
+
+
           {sources: 
                   [{file: '',
                     label:"720p",
@@ -47,18 +47,16 @@ playlist:[{sources:
            image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
            title: 'VIDEO LINK 2',
          },
+
+
          {file: 'https://www.youtube.com/watch?v=mNCTlywJLzI',
            image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
            label:"720p",
            type: "video/mp4",
            title: 'VIDEO LINK 3',
-         autostart: 0,
-         primary: "html5",
          }]
-autostart: 0,
-primary: "html5",    
 });
- 
+
 playerInstance.addButton(
          //This portion is what designates the graphic used for the button
          "https://1.bp.blogspot.com/-JYsci6seCT4/WBjsYDO5H0I/AAAAAAAAIp4/LDv2JOzffOYsNAOurrk1Fi57r1BXpsCDwCLcB/s1600/icon-download.png",
@@ -72,8 +70,8 @@ playerInstance.addButton(
          },
          "download"
         ); 
-</script>
 
+</script>
 
 
 </body>
