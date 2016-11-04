@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="https://content.jwplatform.com/libraries/oklVexpV.js"></script>
+<div class="picasa" id="picasa"></div>
+<script style="border: outset 3px grey; box-shadow: 0px 0px 25px black;" type="text/javascript">
+  var playerInstance = jwplayer("picasa");
+  playerInstance.setup({
+  id:'picasa',
+  controls: true,
+  displaytitle: true,
+  width: "100%",
+  height: "100%",
+  aspectratio: "16:9",
+  fullscreen: "true",
+  primary: 'html5',
+  provider: 'http',
+  autostart: false,
+  image:"/jwplayer/thumb.jpg",
+
+playlist: [{
+  sources: [{file:"",label:"720p",type: "video/mp4"}],
+
+title: 'VIDEO LINK 1',
+},
+{
+sources: [{file:"",label:"720p",type: "video/mp4"}],
+title: 'VIDEO LINK 2',
+},
+{
+sources: [
+{
+file: "https://lh3.googleusercontent.com/liXdtOLZsp4oI4o7ySLUCpuLfgGImt8hrHkYHSC3O79txjBY7RABO4smgBqA736t6yFraENNQ1gQ=m37",
+label:"720p",
+type: "video/mp4",
+default: "true"}],
+title: 'VIDEO LINK 3',
+}] ,
+autostart: 0,
+primary: "html5",   
+ });
+
+playerInstance.addButton(
+         //This portion is what designates the graphic used for the button
+         "https://1.bp.blogspot.com/-JYsci6seCT4/WBjsYDO5H0I/AAAAAAAAIp4/LDv2JOzffOYsNAOurrk1Fi57r1BXpsCDwCLcB/s1600/icon-download.png",
+         "Download Video",
+         function() { 
+          var kI = playerInstance.getPlaylistItem(),
+           kcQ = playerInstance.getCurrentQuality();
+          if(kcQ < 0) { kcQ =0;}
+          var kF = kI.sources[kcQ].file+"&type=video/mp4&title=Film855.Download";
+          window.open(kF,'_blank');
+         },
+         "download"
+        ); 
+
+</script>
+
+
+
+
+</body>
+</html>
+
