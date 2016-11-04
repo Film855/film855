@@ -6,12 +6,13 @@
 </head>
 <body>
 <script src="https://content.jwplatform.com/libraries/RhV9wGlo.js"></script>
+<div class="container" id="container"></div>
 <div id="container">&nbsp;</div>
 <script type="text/javascript">
 var playerInstance = jwplayer("container");
   playerInstance.setup
 ({
-  id:'picasa',
+  id:'container',
   controls: true,
   displaytitle: true,
   width: "100%",
@@ -21,6 +22,7 @@ var playerInstance = jwplayer("container");
   primary: 'html5',
   provider: 'http',
   autostart: false,
+  image:"/jwplayer/thumb.jpg",
 
 playlist:[{sources: 
                   [{file: 'https://lh3.googleusercontent.com/fi6I9ZCDxNTxjO3MQlcnv_bbz9Wg4iF_B30Ehbn8pvjwXk3x0YM4hwDJ5RBa7Jq5xtfd2oil6DAh=m22',
@@ -55,7 +57,10 @@ playlist:[{sources:
            label:"720p",
            type: "video/mp4",
            title: 'VIDEO LINK 3',
+         autostart: 0,
+         primary: "html5",
          }]
+   
 });
 
 playerInstance.addButton(
