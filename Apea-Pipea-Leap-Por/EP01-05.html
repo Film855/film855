@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<style type="text/css">*{margin:0;padding:0}#picasa{position:absolute;width:100%!important;height:100%!important}</style>
+</head>
+<body>
+<script src="https://content.jwplatform.com/libraries/RhV9wGlo.js"></script>
+<div class="container" id="container"></div>
+<div class="picasa" id="picasa"></div>
+<script style="border: outset 3px grey; box-shadow: 0px 0px 25px black;" type="text/javascript">
+  var playerInstance = jwplayer("picasa");
+  playerInstance.setup({
+  controls: true,
+  displaytitle: true,
+  width: "100%",
+  height: "100%",
+  aspectratio: "16:9",
+  fullscreen: "true",
+  primary: 'html5',
+  provider: 'http',
+  autostart: false,
+playlist:[{sources: 
+                  [{file: '',
+                    label:"720p",
+                    type: "video/mp4"
+                   },
+                  {file: '',
+                    label:"480p",
+                    type: "video/mp4"
+                 }],
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           title: 'Episode01',
+         },
+          {sources: 
+                  [{file: '',
+                    label:"720p",
+                    type: "video/mp4"
+                   },
+                  {file: '',
+                    label:"480p",
+                    type: "video/mp4"
+                 }],
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           title: 'Episode02',
+         },
+         {sources: 
+                  [{file: '',
+                    label:"720p",
+                    type: "video/mp4"
+                   },
+                  {file: '',
+                    label:"480p",
+                    type: "video/mp4"
+                 }],
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           title: 'Episode03',
+         },
+         {sources: 
+                  [{file: '',
+                    label:"720p",
+                    type: "video/mp4"
+                   },
+                  {file: '',
+                    label:"480p",
+                    type: "video/mp4"
+                 }],
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           title: 'Episode04',
+         },
+         {sources: 
+                  [{file: '',
+                    label:"720p",
+                    type: "video/mp4"
+                   },
+                  {file: '',
+                    label:"480p",
+                    type: "video/mp4"
+                 }],
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           title: 'Episode05',
+         },
+         {file: 'https://www.youtube.com/watch?v=YgSvyS4IbcY',
+           image: 'http://onehdwallpaper.com/wp-content/uploads/2015/07/Colorful-Nature-HD-Wallpapers-Pictures.jpg',
+           label:"720p",
+           type: "video/mp4",
+           title: 'Please Wait...',
+         }]
+});
+
+
+playerInstance.addButton(
+         //This portion is what designates the graphic used for the button
+         "https://1.bp.blogspot.com/-JYsci6seCT4/WBjsYDO5H0I/AAAAAAAAIp4/LDv2JOzffOYsNAOurrk1Fi57r1BXpsCDwCLcB/s1600/icon-download.png",
+         "Download Video",
+         function() { 
+          var kI = playerInstance.getPlaylistItem(),
+           kcQ = playerInstance.getCurrentQuality();
+          if(kcQ < 0) { kcQ =0;}
+          var kF = kI.sources[kcQ].file+"&type=video/mp4&title=Film855.Download";
+          window.open(kF,'_blank');
+         },
+         "download"
+        ); 
+</script>
+
+
+</body>
+</html>
