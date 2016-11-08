@@ -503,8 +503,7 @@ html_ += '</div>';
 html_ += '<div class="sd_videos">';
 html_ += '<ul class="sd_list"></ul>';
 html_ += '<div class="sd_control">';
-html_ += '<span class="sd_
-sd_btn"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i><span> prevPage</span></span>';
+html_ += '<span class="sd_prevPage sd_btn"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i><span> prevPage</span></span>';
 html_ += '<span class="sd_prev sd_btn"><i class="fa fa-chevron-left"></i><span> prev</span></span>';
 html_ += '<span class="sd_next sd_btn"><span>next </span><i class="fa fa-chevron-right"></i></span>';
 html_ += '<span class="sd_nextPage sd_btn"><span>nextPage </span><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></span>';
@@ -723,7 +722,23 @@ $(window).resize(function(){
  size();
 }); 
 size();
-
+/* scroll */
+function scroll(t){
+ if(t.scrollTop()>0){
+  player.find('.sd_prevPage').addClass('active');
+ }else{
+  player.find('.sd_prevPage').removeClass('active');
+ }
+ if(t[0].scrollHeight >= t.outerHeight()+t.scrollTop()+5){
+  player.find('.sd_nextPage').addClass('active');
+ }else{
+  player.find('.sd_nextPage').removeClass('active');
+ }
+}
+player.find('.sd_list').scroll(function(){
+ scroll($(this));
+});
+scroll(player.find('.sd_list'));
 /* view */
 function view(direction){
  var viewTop = player.find('.sd_list').scrollTop();
