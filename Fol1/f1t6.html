@@ -503,8 +503,7 @@ html_ += '</div>';
 html_ += '<div class="sd_videos">';
 html_ += '<ul class="sd_list"></ul>';
 html_ += '<div class="sd_control">';
-html_ += '<span class="sd_prevPage sd_btn"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-left"></i><span> prevPage</span></span>';
-html_ += '<span class="sd_prev sd_btn"><i class="fa fa-chevron-left"></i><span> prev</span></span>';
+
 html_ += '<span class="sd_next sd_btn"><span>next </span><i class="fa fa-chevron-right"></i></span>';
 html_ += '<span class="sd_nextPage sd_btn"><span>nextPage </span><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i></span>';
 html_ += '</div>';
@@ -682,20 +681,7 @@ player.find('.sd_list').find('li').each(function(num){
   select();
  });
 });
-/* select video */
-function select(){
- if(video_count>0){
-  player.find('.sd_prev').addClass('active');
- }else{
-  player.find('.sd_prev').removeClass('active');
- }
- if(video_count<files.length-1){
-  player.find('.sd_next').addClass('active');
- }else{
-  player.find('.sd_next').removeClass('active');
- }
-}
-select();
+
 /* size */
 function size(){
  if($(window).width()<opt.player_mobile_on_width || !opt.automatic_response){ 
@@ -724,21 +710,7 @@ $(window).resize(function(){
 size();
 /* scroll */
 
-/* view */
-function view(direction){
- var viewTop = player.find('.sd_list').scrollTop();
- var viewBottom = viewTop + player.find('.sd_list').outerHeight();
- var elTop = player.find('.sd_list').find('li').eq(video_count).offset().top-player.find('.sd_list').find('li').eq(video_count).parent().offset().top;
- var elBottom = elTop + player.find('.sd_list').find('li').eq(video_count).outerHeight();
- if((elBottom+viewTop+10 >= viewBottom+player.find('.sd_list').find('li').eq(video_count).outerHeight())||(elBottom < 1)){
-  scroll_step = video_count*(item_height);
-  if(direction == 'prev'){
-   scroll_step = (video_count-list_item+1)*(item_height);
-  }
-  player.find('.sd_list').animate({scrollTop:scroll_step},500);
- }
- return true;
-}
+
 /* CONTROL BUTTONS */
 
 //]]>
