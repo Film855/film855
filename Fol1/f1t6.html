@@ -723,22 +723,7 @@ $(window).resize(function(){
 }); 
 size();
 /* scroll */
-function scroll(t){
- if(t.scrollTop()>0){
-  player.find('.sd_prevPage').addClass('active');
- }else{
-  player.find('.sd_prevPage').removeClass('active');
- }
- if(t[0].scrollHeight >= t.outerHeight()+t.scrollTop()+5){
-  player.find('.sd_nextPage').addClass('active');
- }else{
-  player.find('.sd_nextPage').removeClass('active');
- }
-}
-player.find('.sd_list').scroll(function(){
- scroll($(this));
-});
-scroll(player.find('.sd_list'));
+
 /* view */
 function view(direction){
  var viewTop = player.find('.sd_list').scrollTop();
@@ -755,60 +740,7 @@ function view(direction){
  return true;
 }
 /* CONTROL BUTTONS */
-/* prevPage */
-player.find('.sd_prevPage').click(function(){
- if($(this).hasClass('active')){
-  scroll_step = player.find('.sd_list').scrollTop()-list_item*player.find('.sd_list').find('li').outerHeight();
-  scroll_step = Math.ceil(scroll_step/item_height);
-  player.find('.sd_list').animate({scrollTop:scroll_step*(item_height)},500);
- }
-});
-/* prev */
-player.find('.sd_prev').click(function(){
- if(video_count>0){
-  video_count--;  
-  select();
-  view('prev');
-  player.find('.sd_list').find('li').eq(video_count).trigger('click');
- }
-});
-/* next */
-player.find('.sd_next').click(function(){
- if(video_count<files.length-1){
-  video_count++;
-  select(); 
-  view('next'); 
-  player.find('.sd_list').find('li').eq(video_count).trigger('click');
- }
-});
-/* nextPage */
-player.find('.sd_nextPage').click(function(){
- if($(this).hasClass('active')){
-  scroll_step = player.find('.sd_list').scrollTop()+list_item*item_height;
-  scroll_step = Math.ceil(scroll_step/item_height);
-  player.find('.sd_list').animate({scrollTop:scroll_step*(item_height)},500);
- }
-});
-player.find('.sd_list').animate({scrollTop:0},10);
-player.find('.sd_list').find('li').eq(0).trigger('click');
-$(document).ready(function(){
-$('script[src^="https://dl.dropboxusercontent.com/s/8v04o4srg4rr4fr/jj.js"]').remove();
-});
-function autocontinue_next(){
- if(video_count<files.length-1){
-  video_count++;
-  select(); 
-  view('next'); 
-  player.find('.sd_list').find('li').eq(video_count).trigger('click');
- }
-}
-}
-var timer = setInterval(function(){
- if(typeof options != 'undefined'){
-  new Video_player(options);
-  clearInterval(timer);
- } 
-},50);
+
 //]]>
 </script>
 
