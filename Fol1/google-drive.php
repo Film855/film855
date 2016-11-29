@@ -28,3 +28,22 @@ function curl($url)
 	return $page;
 }
 ?>
+<div id="player"></div>
+<script type="text/javascript" src="https://api.blogit.vn/BITplayer/jwplayer/jwplayer-7.7.4/jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer.key = "rqQQ9nLfWs+4Fl37jqVWGp6N8e2Z0WldRIKhFg==";
+	var playerInstance = jwplayer("player");
+		playerInstance.setup({
+			id:'player',
+			sources: <?php echo $sources; ?>,
+			controls: true,
+			displaytitle: true,
+			width: "100%",
+			height: "100%",
+			aspectratio: "16:9",
+			fullscreen: "true",
+			autostart: true,
+			abouttext: "Player for demo BlogIT.vn",
+			aboutlink: "http://blogit.vn/",
+		});
+</script>
