@@ -1,0 +1,13 @@
+//test playlist iframe
+<script type="text/javascript" src="https://film855.github.io/film855/Data-Player/nmhillusionPublic.min.js"></script>
+
+<center>
+Bạn đang xem video số <b id='tieude'>1</b><br />
+<iframe id="video" width="560" height="315" src='https://www.youtube.com/embed/6Jo04X_Y524' allowfullscreen ></iframe>
+<br />
+<div style="background-color: grey;width: 50%;padding: 5px;" id="parentBox" ></div>
+</center>
+<script>
+        var linkVideo= ['https://www.youtube.com/embed/6Jo04X_Y524', 'https://www.youtube.com/embed/CzHkijrSuMs', 'https://www.youtube.com/embed/5yge9_lRqJg', 'https://www.youtube.com/embed/Cnfj6QCGLyA','https://drive.google.com/file/d/0B7tfL8Ndji5NS04zRHZ1SzlUd2M/preview'];
+        autoCreatButton(linkVideo,'parentBox', 'video', 'video', 'tieude', 1);
+</script>
