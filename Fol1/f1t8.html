@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<style type="text/css">*{margin:0;padding:0}#picasa{position:absolute;width:100%!important;height:100%!important}</style>
+</head>
+<body>
+
+<h3>
+<center>
+<span style="font-size: large;">You Are Watching: Episode <span id="Film855NamePlayer">1</span></span></center>
+</h3>
+<center>
+<div class="video-container">
+<iframe allowfullscreen="" frameborder="0" height="315" id="video" src="https://drive.google.com/file/d/1lK3nDMT0dj4X4aUHrINN-Fzvgy4L8ztZ0A/preview" style="border: outset 5px grey; box-shadow: 0px 0px 25px black;" width="560"></iframe><b><span style="font-size: xx-small;">&nbsp;&nbsp;</span></b></div>
+</center>
+<center>
+<div id="parentBox" style="border: outset 0px silver; box-shadow: 0px 0px 25px black; height: 140px; line-height: 3em; overflow: scroll; padding: 5px; width: 100%; width: 90%;">
+</div>
+
+<script>
+var linkVideo= [
+'https://drive.google.com/file/d/1lK3nDMT0dj4X4aUHrINN-Fzvgy4L8ztZ0A/preview?autoplay=1',
+'https://drive.google.com/file/d/1xb2DJLuYqFTwMu4_ppbGiS0P2gsE-vlckQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1pbnIgkYmzd1LRgAOL4-CwFUYEfVhvl_CNg/preview?autoplay=1',
+'https://drive.google.com/file/d/1xo-eWxehw9LpnCii-WQDc6t-XVVcBAfZrA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1bfbIa4zxz2LaXsIeioSqMElBCwl2bxtQJA/preview?autoplay=1',
+'https://drive.google.com/file/d/1sz6QiCSrKiRY0kzSCihHsqU1YQtPyJII3w/preview?autoplay=1', 
+'https://drive.google.com/file/d/1-gGGRQHv7cS3HtCmMqYWX0FIZf0XKMdOMw/preview?autoplay=1',
+'https://drive.google.com/file/d/1KKqLaBu0pd4XZSGWiPq958MmyNGVYj67hQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1EJd5ZdF3usA-tSAeBqPmPMRxe8g1cifsOQ/preview?autoplay=1',
+'https://drive.google.com/file/d/1UCfm7MZfwrwaFUB91eG2LH4UmEyslu7xYg/preview?autoplay=1',
+
+'https://drive.google.com/file/d/1RwR9IO6Yp2vKNoE9ipBa1sOB-p_MThgzQg/preview?autoplay=1',
+'https://drive.google.com/file/d/1VSB-KsPd-bS2cgprc57Fdz2ZvzvFpxNojQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1WsgNYcIYwYUv-34r6p8zl48M0C6sHm2RIA/preview?autoplay=1',
+'https://drive.google.com/file/d/1IVGm6bGiehwU_jNY0BJZPqrno50pcF5amQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1USISQ9f-8-eUeeNMaOJ-170oVVCECdpqCQ/preview?autoplay=1',
+'https://drive.google.com/file/d/1ihm6XBhGX4GbuYavkdZ31qb2dSgf3dbgwA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1fCdXCkVURZZ7zcTCkvAXHmpJRZGpn6tWsw/preview?autoplay=1',
+'https://drive.google.com/file/d/1_kKosoAzoKQrwfwE35_agboAHKVYuDrFjQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/11wwX-8Hn1JDMaMOpFX_gp5bIQt-OfoC2Mg/preview?autoplay=1',
+'https://drive.google.com/file/d/1Fp8It05DvXEs0QaCi6OnBNMdM0R9bdxjKA/preview?autoplay=1',
+
+'https://drive.google.com/file/d/1MWHwiZOqNTj6eb9WXvDsTmWkyhnT7MTa4g/preview?autoplay=1',
+'https://drive.google.com/file/d/1Qojxba5sc5g5sXrX9D7ZuIGX1NMDqemGfA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1Z5hGIHJl9hkHqQwrpHV-plea4a9BUeS9YQ/preview?autoplay=1',
+'https://drive.google.com/file/d/1kaS5YfjNoSkc9a0VX7THe89rSKE2VXw6Uw/preview?autoplay=1', 
+'https://drive.google.com/file/d/1QIwpIK0jduulsbEFgrlVBEBLFSUkqd3o_w/preview?autoplay=1',
+'https://drive.google.com/file/d/1Sy9qOOeCX5Yx7u0QPaFfTsYyBtmYoCfGNw/preview?autoplay=1', 
+'https://drive.google.com/file/d/15Dgy_Ik5bBnJ-3Ph5GVtMtKq0X-s7rVu-g/preview?autoplay=1',
+'https://drive.google.com/file/d/1IId9Rd0hZgE93F1JsaL8VomC_rb_niWxcQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1PWK6_d2_X4c_HimSFF0MIj0nRmaw_lHufA/preview?autoplay=1',
+'https://drive.google.com/file/d/11B2jeDLBnld5tSKp6R1S6EzkSo4L4ic4Sg/preview?autoplay=1',
+
+'https://drive.google.com/file/d/1ljpVQjl1_Htr9Rd0NJhXy55eMQtAecqjJw/preview?autoplay=1',
+'https://drive.google.com/file/d/1vQZlKfSXDyc4aMX7oWuIah6c8nPijKytlg/preview?autoplay=1', 
+'https://drive.google.com/file/d/1BS-Wr8-B_KKW-cHlol2HkqPi7zwVLVllEw/preview?autoplay=1',
+'https://drive.google.com/file/d/1VSGFKSrf2-rQcDgLTo3y-Ey7hgbe_0jlYQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/12K_2ovKfyXBi6yXLHj7kWgNpxthhdd4fUg/preview?autoplay=1',
+'https://drive.google.com/file/d/17NVQL-rfMyjBdDh_w-69CNSs4rUWUJYFmA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1CbGnx3S7cfDHtyXX43PWsctPd-lWNV-KQQ/preview?autoplay=1',
+'https://drive.google.com/file/d/1SC1B6-bmLdJQ9hy0-64Lei2JW4DGwDFIUA/preview?autoplay=1', 
+'https://drive.google.com/file/d/17Mp1r-jO-uoud2X9aW05qhRjE_EgfTr3og/preview?autoplay=1',
+'https://drive.google.com/file/d/1BVo865ri-0WQjwRH9qf5gCYQu6Q4WbB54A/preview?autoplay=1',
+
+'https://drive.google.com/file/d/1cjGuaLTJm049D5svf4_5p2OGt5eYxIS1_w/preview?autoplay=1',
+'https://drive.google.com/file/d/12VVgNx2UOc3u4QxRyjT3PEfWlND4NiQreA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1iWbBEzoKNbvEO6ljhVy21FOP9L2cWrcXkg/preview?autoplay=1',
+'https://drive.google.com/file/d/15_WTqUOJTOJ5MwncjUFHN2DM2qJUJgfgQA/preview?autoplay=1', 
+'https://drive.google.com/file/d/1p5fvEtbQgjbRgi6kR1097ys-rjByD6AnUQ/preview?autoplay=1',
+'https://drive.google.com/file/d/1bJV7hjmPVvnfEjv5496TuHHrwXwTB7rRxQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1ufQACGE0LaZZyNr2pQbz8TVd2Ezub5_64A/preview?autoplay=1',
+'https://drive.google.com/file/d/1f126Eb_LHuH__B6Aqz_TdWZ_sisYIajm7A/preview?autoplay=1', 
+'https://drive.google.com/file/d/1XhOOeyq3dXwD_7R3CFuNXnBuBNi4J4-UUw/preview?autoplay=1',
+'https://drive.google.com/file/d/19nHB1-XlMPdT7qCvqjo5QcPNg82FnJL5-Q/preview?autoplay=1',
+
+'https://drive.google.com/file/d/1-MTReD-r1bAo3YMcCqv3fai9SOQg5IkpLw/preview?autoplay=1',
+'https://drive.google.com/file/d/1qluC_Finzl_ZWChqh8Jc0Dc4UwCQqF5_aQ/preview?autoplay=1', 
+'https://drive.google.com/file/d/1jL8aUOhSvOJDnhRU7ukX1rQ5Xzzi9f2atA/preview?autoplay=1',
+'https://drive.google.com/file/d/1Nit3b0rkXu-MEISNLh86-whhqf3XZeQ6iQ/preview?autoplay=1'];
+
+autoCreatButton(linkVideo,'parentBox', 'video', 'EP', 'Film855NamePlayer', 1);
+</script>
+
+
+</body>
+</html>
