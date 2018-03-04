@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "506978a6c0285debf57c5f8027b46d5f",
+    "content-hash": "c4286c2bf41b22c9045d644c7c911a07",
+    "packages": [
+        {
+            "name": "marxvn/gdrive",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marxvn/gdrive.git",
+                "reference": "0b4382e2c8b723cce13030947ed73138b81f2fc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marxvn/gdrive/zipball/0b4382e2c8b723cce13030947ed73138b81f2fc1",
+                "reference": "0b4382e2c8b723cce13030947ed73138b81f2fc1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "suggest": {
+                "tedivm/stash": "For caching source video url"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Marxvn\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Pham"
+                }
+            ],
+            "description": "GDrive library.",
+            "time": "2016-10-29 03:14:49"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
