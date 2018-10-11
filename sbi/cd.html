@@ -1,0 +1,570 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" type="image/x-icon">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=10; chrome=1;">
+<meta name="fragment" content="!">
+<meta name="viewport" content="width=device-width">
+<base target="_blank">
+<title>AIO Record System</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Alegreya+Sans:400,700">
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" href="https://rawgit.com/pbauerochse/searchable-option-list/master/sol.css">
+<script type="text/javascript" src="https://rawgit.com/pbauerochse/searchable-option-list/master/sol.js"></script>
+
+<div id="json-data-array-example" data-sol-name="character4"></div>
+
+
+
+
+<link href='/static/forms/client/css/3745490333-formview_st_ltr.css' type='text/css' rel='stylesheet'>
+<style type="text/css">
+body {
+  background-color: rgb(237,237,233);
+  background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/8e0a20cdc63c45fdf8ae64b4d46a179d82e90e46d70c10e000677e7f68e85452/game-night-bg.png');
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+.ss-form-container, .ss-resp-card {
+  background-color: rgb(254,254,254);
+}
+
+.ss-footer, .ss-response-footer {
+  background-color: rgb(254,254,254);
+}
+
+.ss-grid-row-odd {
+  background-color: rgb(241,241,241);
+}
+
+.ss-form-container, .ss-resp-card {
+  border-color: rgb(216,216,216);
+}
+
+.ss-form-title {
+  text-align: left;
+}
+
+.ss-form-title[dir="rtl"] {
+  text-align: right;
+}
+
+.ss-form-desc {
+  text-align: left;
+}
+
+.ss-form-desc[dir="rtl"] {
+  text-align: right;
+}
+
+.ss-header-image-container {
+  height: auto;
+  text-align: center;
+}
+
+.ss-header-image-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/themes/images/v1/8e0a20cdc63c45fdf8ae64b4d46a179d82e90e46d70c10e000677e7f68e85452/22_game_night.jpg');
+}
+
+.ss-header-image-sizer {
+  padding-top: 25.000%;
+}
+
+.ss-item {
+  font-size: 1.250rem;
+}
+
+.ss-choices {
+  font-size: 1.000rem;
+}
+
+body {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-record-username-message {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-form-title {
+  font-family: "Alegreya Sans";
+  color: rgb(46,137,170);
+  font-weight: 700;
+  font-size: 2.460rem;
+  font-style: normal;
+}
+
+.ss-confirmation {
+  font-family: "Alegreya Sans";
+  color: rgb(0,129,164);
+  font-weight: 700;
+  font-size: 2.460rem;
+  font-style: normal;
+}
+
+.ss-page-title, .ss-section-title {
+  font-family: "Alegreya Sans";
+  color: rgb(46,137,170);
+  font-weight: 700;
+  font-size: 1.845rem;
+  font-style: normal;
+}
+
+.ss-form-desc, .ss-page-description, .ss-section-description {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-resp-content {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-q-title {
+  font-family: "Alegreya Sans";
+  color: rgb(28,122,155);
+  font-weight: 700;
+  font-size: 1.250rem;
+  font-style: normal;
+}
+
+.ss-embeddable-object-container .ss-q-title {
+  font-family: "Alegreya Sans";
+  color: rgb(28,122,155);
+  font-weight: 700;
+  font-size: 1.845rem;
+  font-style: normal;
+}
+
+.ss-q-help, .ss-q-time-hint {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-choice-label, .video-secondary-text, .ss-gridrow-leftlabel, .ss-gridnumber, .ss-scalenumber, .ss-leftlabel, .ss-rightlabel {
+  font-family: "Alegreya Sans";
+  color: rgb(90,74,64);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.error-message, .required-message, .ss-required-asterisk {
+  font-family: "Alegreya Sans";
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-send-email-receipt {
+  font-family: "Alegreya Sans";
+  color: rgb(28,122,155);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.ss-password-warning {
+  font-family: "Arial";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: italic;
+}
+
+.disclaimer {
+  font-family: "Arial";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 0.850rem;
+  font-style: normal;
+}
+
+.ss-footer-content {
+  font-family: "Arial";
+  color: rgb(90,74,64);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+.progress-label {
+  font-family: "Alegreya Sans";
+  color: rgb(118,109,107);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
+}
+
+a:link {
+  color: rgb(0,0,238);
+}
+
+a:visited {
+  color: rgb(85,26,139);
+}
+
+a:active {
+  color: rgb(251,0,0);
+}
+
+input[type='text'], input:not([type]), textarea {
+  font-size: 1.000rem;
+}
+
+.error, .required, .errorbox-bad {
+  border-color: rgb(196,59,29);
+}
+
+.jfk-progressBar-nonBlocking .progress-bar-thumb {
+  background-color: rgb(118,109,107);
+}
+
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark.png');
+  background-size: 108px 21px;
+  width: 108px;
+  height: 21px;
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+.ss-logo-image {
+  background-image: url('//ssl.gstatic.com/docs/forms/forms_logo_2_small_dark_2x.png');
+}
+}
+
+</style>
+
+
+<link href='/static/forms/client/css/3145455273-mobile_formview_st_ltr.css' type='text/css' rel='stylesheet' media='screen and (max-device-width: 721px)'>
+
+<script type="text/javascript" nonce="Sv17lvJRLR8IT3Z5XZSBcxw2st4">
+          
+          /**
+ * @license
+ *
+ * H5F 1.1.1
+ * See https://github.com/ryanseddon/H5F/ for details.
+ *
+ * Copyright (c) 2013 Ryan Seddon
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ */
+(function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+
+        </script>
+<link rel="alternate" type="text/xml+oembed" href="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/oembed?url=https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/viewform&amp;format=xml">
+<meta property="og:title" content="AIO Record System"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh3.googleusercontent.com/DyPNoIzWLrXTaTbjccu3YUA8qMHzI_exIeaZ9hRz9vaNQjy7wDbL3rtLmuXhNLXMsyU=w1200-h630-p"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:description" content="Easy, Fast and Secure v3.1"><meta property="og:ttl" content="604800">
+</head>
+<body dir="ltr" class="ss-base-body">
+<div itemscope itemtype="http://schema.org/CreativeWork/FormObject"><meta itemprop="name" content="AIO Record System">
+<meta itemprop="description" content="Easy, Fast and Secure v3.1">
+
+<meta itemprop="url" content="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/viewform">
+<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/viewform?embedded=true">
+<meta itemprop="faviconUrl" content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+
+
+<div class="ss-form-container"><div class="ss-header-image-container"><div class="ss-header-image-image"><div class="ss-header-image-sizer"></div></div></div>
+<div class="ss-top-of-page"><div class="ss-form-heading"><h1 class="ss-form-title" dir="ltr">AIO Record System</h1>
+<div class="ss-form-desc ss-no-ignore-whitespace" dir="ltr">Easy, Fast and Secure v3.1</div>
+
+</div></div>
+<div class="ss-form"><form action="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on"><ol role="list" class="ss-question-list" style="padding-left: 0;">
+
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_629876370"><div class="ss-q-title">Payments​ - ទូទាត់
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<select id="entry_629876370" name="entry_629876370">
+    <option value="Income - ទូទាត់ចំនូល">Income - ទូទាត់ចំនូល</option>
+    <option value="Expense - ទូទាត់ចំនាយ">Expense - ទូទាត់ចំនាយ</option>
+    <option value="Fund Transfer - ផ្ទេរប្រាក់">Fund Transfer - ផ្ទេរប្រាក់</option>
+    <option value="Last Record - ទិន្នន័យចាស់">Last Record - ទិន្នន័យចាស់</option> 
+    <option value="Other - ផ្សេងៗ">Other - ផ្សេងៗ</option>
+</select>
+
+<script type="text/javascript">
+    $(function() {
+        // initialize sol
+        $('#entry_629876370').searchableOptionList();
+    });
+</script>
+
+
+<div class="error-message" id="1869812052_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1962095206"><div class="ss-q-title">Product Name - ឈ្មោះផលិតផល
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<select id="entry_1962095206" name="entry_1962095206">
+    <option value="01-Mini Sewing Machines - ម៉ាស៊ីនដេរ">01-Mini Sewing Machines - ម៉ាស៊ីនដេរ</option>
+    <option value="03-Massage Pillow - ខ្នើយម៉ាស្សា">03-Massage Pillow - ខ្នើយម៉ាស្សា</option>
+    <option value="04-Vacuum cupping therapy - ឧបករណ៍ជប់ខ្យល់">04-Vacuum cupping therapy - ឧបករណ៍ជប់ខ្យល់</option>
+    <option value="05-Cervical Vertebra Physiotherapy - ឧបករណ៏ម៉ាស្សាក និង ស្មា">05-Cervical Vertebra Physiotherapy - ឧបករណ៏ម៉ាស្សាក និង ស្មា</option> 
+    <option value="06-Sokany Facial Ionic Steamer - ម៉ាស៊ីនឆ្ពុងមុខ Sokany">06-Sokany Facial Ionic Steamer - ម៉ាស៊ីនឆ្ពុងមុខ Sokany</option>
+    <option value="07-FHSM 505A Mini Sewing Machine - ម៉ាសីុនដេរ ១២ថ្នេរ">07-FHSM 505A Mini Sewing Machine - ម៉ាសីុនដេរ ១២ថ្នេរ</option>
+    <option value="08-Sleeping Bag - កញ្ចប់កំរាលដេកការិយាល័យ">08-Sleeping Bag - កញ្ចប់កំរាលដេកការិយាល័យ</option>
+    <option value="Other - ផ្សេងៗ">Other - ផ្សេងៗ</option>
+</select>
+
+<script type="text/javascript">
+    $(function() {
+        // initialize sol
+        $('#entry_1962095206').searchableOptionList();
+    });
+</script>
+
+<div class="error-message" id="1775579520_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_120076962"><div class="ss-q-title">Number In / Credit - ចំនួនដាក់ចូល
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.120076962" value="" class="ss-q-short" id="entry_120076962" dir="auto" aria-label="Number In / Credit - ចំនួនដាក់ចូល  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="1366132087_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_973356576"><div class="ss-q-title">Number Out / Debit​ - ចំនួនដកចេញ
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.973356576" value="" class="ss-q-short" id="entry_973356576" dir="auto" aria-label="Number Out / Debit​ - ចំនួនដកចេញ  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="689402056_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-radio"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1352080159"><div class="ss-q-title">Payment Category - ប្រភេទទូទាត់
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+
+<ul class="ss-choices" role="radiogroup" aria-label="Payment Category - ប្រភេទទូទាត់  "><li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Wholesaler - &#6043;&#6016;&#6091;&#6026;&#6075;&#6086;" id="group_360593939_1" role="radio" class="ss-q-radio" aria-label="Wholesaler - &#6043;&#6016;&#6091;&#6026;&#6075;&#6086;"></span>
+<span class="ss-choice-label">Wholesaler - លក់ដុំ</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Retailer - &#6043;&#6016;&#6091;&#6042;&#6070;&#6041;" id="group_360593939_2" role="radio" class="ss-q-radio" aria-label="Retailer - &#6043;&#6016;&#6091;&#6042;&#6070;&#6041;"></span>
+<span class="ss-choice-label">Retailer - លក់រាយ</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Transport Fee - &#6032;&#6098;&#6043;&#6083;&#6026;&#6073;&#6016;&#6023;&#6025;&#6098;&#6023;&#6076;&#6035;" id="group_360593939_3" role="radio" class="ss-q-radio" aria-label="Transport Fee - &#6032;&#6098;&#6043;&#6083;&#6026;&#6073;&#6016;&#6023;&#6025;&#6098;&#6023;&#6076;&#6035;"></span>
+<span class="ss-choice-label">Transport Fee - ថ្លៃដឹកជញ្ជូន</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Stock Input - &#6026;&#6070;&#6016;&#6091;&#6036;&#6025;&#6098;&#6023;&#6076;&#6043;&#6047;&#6098;&#6031;&#6075;&#6016;" id="group_360593939_4" role="radio" class="ss-q-radio" aria-label="Stock Input - &#6026;&#6070;&#6016;&#6091;&#6036;&#6025;&#6098;&#6023;&#6076;&#6043;&#6047;&#6098;&#6031;&#6075;&#6016;"></span>
+<span class="ss-choice-label">Stock Input - ដាក់បញ្ជូលស្តុក</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Fee Transfer Money - &#8203;&#6032;&#6098;&#6043;&#6083;&#6047;&#6081;&#6044;&#6070;&#6037;&#6098;&#6033;&#6081;&#6042;&#6036;&#6098;&#6042;&#6070;&#6016;&#6091;" id="group_360593939_5" role="radio" class="ss-q-radio" aria-label="Fee Transfer Money - &#8203;&#6032;&#6098;&#6043;&#6083;&#6047;&#6081;&#6044;&#6070;&#6037;&#6098;&#6033;&#6081;&#6042;&#6036;&#6098;&#6042;&#6070;&#6016;&#6091;"></span>
+<span class="ss-choice-label">Fee Transfer Money - ​ថ្លៃសេវាផ្ទេរប្រាក់</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="SBI Saving - &#6036;&#6098;&#6042;&#6070;&#6016;&#6091;&#6047;&#6035;&#6098;&#6047;&#6086;&#6036;&#6098;&#6042;&#6021;&#6070;&#6086;&#6017;&#6082;" id="group_360593939_6" role="radio" class="ss-q-radio" aria-label="SBI Saving - &#6036;&#6098;&#6042;&#6070;&#6016;&#6091;&#6047;&#6035;&#6098;&#6047;&#6086;&#6036;&#6098;&#6042;&#6021;&#6070;&#6086;&#6017;&#6082;"></span>
+<span class="ss-choice-label">SBI Saving - ប្រាក់សន្សំប្រចាំខែ</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Promote Product - &#6037;&#6098;&#6047;&#6070;&#6041;&#6038;&#6070;&#6030;&#6071;&#6023;&#6098;&#6023;&#6016;&#6040;&#6098;&#6040;" id="group_360593939_7" role="radio" class="ss-q-radio" aria-label="Promote Product - &#6037;&#6098;&#6047;&#6070;&#6041;&#6038;&#6070;&#6030;&#6071;&#6023;&#6098;&#6023;&#6016;&#6040;&#6098;&#6040;"></span>
+<span class="ss-choice-label">Promote Product - ផ្សាយពាណិជ្ជកម្ម</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="Pay for Equiment - &#6021;&#6086;&#6035;&#6070;&#6041;&#6043;&#6078;&#6047;&#6086;&#6039;&#6070;&#6042;&#6088;" id="group_360593939_8" role="radio" class="ss-q-radio" aria-label="Pay for Equiment - &#6021;&#6086;&#6035;&#6070;&#6041;&#6043;&#6078;&#6047;&#6086;&#6039;&#6070;&#6042;&#6088;"></span>
+<span class="ss-choice-label">Pay for Equiment - ចំនាយលើសំភារៈ</span>
+</label></li> <li class="ss-choice-item">
+<label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="For Membership - &#6047;&#6040;&#6098;&#6042;&#6070;&#6036;&#6091;&#6047;&#6040;&#6070;&#6023;&#6071;&#6016;" id="group_360593939_9" role="radio" class="ss-q-radio" aria-label="For Membership - &#6047;&#6040;&#6098;&#6042;&#6070;&#6036;&#6091;&#6047;&#6040;&#6070;&#6023;&#6071;&#6016;"></span>
+<span class="ss-choice-label">For Membership - សម្រាប់សមាជិក</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.360593939" value="__other_option__" id="group_360593939_10" role="radio" class="ss-q-radio ss-q-other-toggle"></span>
+<span class="ss-choice-label">Other:</span></label>
+<span class="ss-q-other-container goog-inline-block"><input type="text" name="entry.360593939.other_option_response" value="" class="ss-q-other" id="entry_360593939_other_option_response" dir="auto" aria-label="Other"></span>
+</li></ul>
+<div class="error-message" id="1352080159_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1963896239"><div class="ss-q-title">Credit SBI (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.1963896239" value="" class="ss-q-short" id="entry_1963896239" dir="auto" aria-label="Credit SBI (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="830618541_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1326903341"><div class="ss-q-title">Debit SBI (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.1326903341" value="" class="ss-q-short" id="entry_1326903341" dir="auto" aria-label="Debit SBI (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="373097457_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1296956784"><div class="ss-q-title">Credit SBI (KHR)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="text" name="entry.1296956784" value="" class="ss-q-short" id="entry_1296956784" dir="auto" aria-label="Credit SBI (KHR)  Must contain " pattern=".*.*" title="Must contain ">
+<div class="error-message" id="1477878732_errorMessage">Must contain </div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1831092130"><div class="ss-q-title">Debit SBI (KHR)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="text" name="entry.1831092130" value="" class="ss-q-short" id="entry_1831092130" dir="auto" aria-label="Debit SBI (KHR)  Must contain " pattern=".*.*" title="Must contain ">
+<div class="error-message" id="954977386_errorMessage">Must contain </div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_409154433"><div class="ss-q-title">Credit Sacom (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.409154433" value="" class="ss-q-short" id="entry_409154433" dir="auto" aria-label="Credit Sacom (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="1669031819_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_2055251660"><div class="ss-q-title">Debit Sacom (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.2055251660" value="" class="ss-q-short" id="entry_2055251660" dir="auto" aria-label="Debit Sacom (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="1599956390_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1667327280"><div class="ss-q-title">Credit ABA Bank (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.1667327280" value="" class="ss-q-short" id="entry_1667327280" dir="auto" aria-label="Credit ABA Bank (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="352007925_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_163556667"><div class="ss-q-title">Debit ABA Bank (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.163556667" value="" class="ss-q-short" id="entry_163556667" dir="auto" aria-label="Debit ABA Bank (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="2047685329_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1389512808"><div class="ss-q-title">Credit MB Bank (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.1389512808" value="" class="ss-q-short" id="entry_1389512808" dir="auto" aria-label="Credit MB Bank (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="1304625772_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_21858078"><div class="ss-q-title">Debit MB Bank (USD)
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<input type="number" name="entry.21858078" value="" class="ss-q-short" id="entry_21858078" dir="auto" aria-label="Debit MB Bank (USD)  Must be a number" step="any" title="Must be a number">
+<div class="error-message" id="315709788_errorMessage">Must be a number</div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="auto" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_350249802"><div class="ss-q-title">Other Comment - មតិផ្សេងៗ
+</div>
+<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+<select id="entry_350249802" name="entry_350249802">
+<option value="Current Assets - ទ្រព្យសកម្ម">Current Assets - ទ្រព្យសកម្ម</option> 
+    <option value="Fixed Assets - ទ្រព្យអសកម្ម">Fixed Assets - ទ្រព្យអសកម្ម</option>
+    <option value="Current Liabilities - បំណុលសកម្ម">Current Liabilities - បំណុលសកម្ម</option>
+    <option value="Long Term Liabilities - បំណុលរយៈពេលវែង">Long Term Liabilities - បំណុលរយៈពេលវែង</option>
+    <option value="Capital - មូលធន">Capital - មូលធន</option>
+    <option value="Other - ផ្សេងៗ">Other - ផ្សេងៗ</option>
+</select>
+
+<script type="text/javascript">
+    $(function() {
+        // initialize sol
+        $('#entry_350249802').searchableOptionList();
+    });
+</script>
+
+<div class="error-message" id="1207209800_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[null,null,&quot;4139942005892375903&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+
+<input type="hidden" name="fbzx" value="4139942005892375903">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+<div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+</tr></tbody></table></div></ol></form></div>
+<div class="ss-footer"><div class="ss-attribution"></div>
+<div class="ss-legal"><div class="disclaimer-separator"></div>
+<div class="disclaimer" dir="ltr"><div class="powered-by-logo"><span class="powered-by-text">Powered by</span>
+<a href="https://www.google.com/forms/about/?utm_source=product&amp;utm_medium=forms_logo&amp;utm_campaign=forms"><div class="ss-logo-container ss-logo-css-container"><div class="ss-logo-image"></div>
+<span class="aria-only-help">Google Forms</span></div></a></div>
+<div class="ss-terms"><span class="disclaimer-msg">This content is neither created nor endorsed by Google.</span>
+<br>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSfkU5GjquH4P016_lC16OI4XubAEyN2DpjSWN6Ghql75aTxXQ/viewform">Report Abuse</a>
+-
+<a href="http://www.google.com/accounts/TOS">Terms of Service</a>
+-
+<a href="http://www.google.com/google-d-s/terms.html">Additional Terms</a></div></div></div></div>
+
+<div id="docs-aria-speakable" class="docs-a11y-ariascreenreader-speakable docs-offscreen" aria-live="assertive" role="region" aria-atomic></div></div>
+<a class="ss-edit-link" href="https://docs.google.com/forms/d/1KrmaOravrniSAQRrhaCn2NMH7y6xCk819f_GDBxqgSw/edit">Edit this form</a>
+
+<script nonce="Sv17lvJRLR8IT3Z5XZSBcxw2st4" type='text/javascript' src='/static/forms/client/js/2434231517-formviewer_prd.js'></script>
+<script type="text/javascript" nonce="Sv17lvJRLR8IT3Z5XZSBcxw2st4">H5F.setup(document.getElementById('ss-form'));
+          _initFormViewer(
+            "[100,null,[[[120076962,[[1,9]\n]\n]\n,[973356576,[[1,9]\n]\n]\n,[1963896239,[[1,9]\n]\n]\n,[1326903341,[[1,9]\n]\n]\n,[1296956784,[[2,100,[\x22\x22]\n]\n]\n]\n,[1831092130,[[2,100,[\x22\x22]\n]\n]\n]\n,[409154433,[[1,9]\n]\n]\n,[2055251660,[[1,9]\n]\n]\n,[1667327280,[[1,9]\n]\n]\n,[163556667,[[1,9]\n]\n]\n,[1389512808,[[1,9]\n]\n]\n,[21858078,[[1,9]\n]\n]\n]\n]\n]\n");</script></div></body></html>
